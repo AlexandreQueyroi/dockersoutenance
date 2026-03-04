@@ -1,4 +1,4 @@
-# Todo App – Conteneurisation Docker
+# Soutenance Docker (Zaed HAMED, Tim GAUME, Alexandre QUEYROI)
 
 Application full stack (React + Node.js + PostgreSQL) conteneurisée avec Docker et Docker Compose.
 
@@ -44,8 +44,8 @@ Internet
 
 ### 1. Cloner le dépôt
 ```bash
-git clone https://github.com/<votre-repo>/docker-todo-app.git
-cd docker-todo-app
+git clone https://github.com/AlexandreQueyroi/dockersoutenance
+cd dockersoutenance
 ```
 
 ### 2. Configurer les variables d'environnement
@@ -113,21 +113,8 @@ docker compose down -v
 
 ---
 
-## Pousser les images sur Docker Hub
-
-```bash
-docker login
-
-docker compose build
-
-docker push <DOCKERHUB_USERNAME>/todo-frontend:latest
-docker push <DOCKERHUB_USERNAME>/todo-backend:latest
-```
-
----
-
 ## Liens
 
-- Repository GitHub : https://github.com/<votre-repo>/docker-todo-app
-- Docker Hub Frontend : https://hub.docker.com/r/<username>/todo-frontend
-- Docker Hub Backend : https://hub.docker.com/r/<username>/todo-backend
+- Repository GitHub : https://github.com/AlexandreQueyroi/dockersoutenance
+- Docker Hub Frontend : https://hub.docker.com/repository/docker/alexandrequeyroi/todo-frontend/general
+- Docker Hub Backend : https://hub.docker.com/repository/docker/alexandrequeyroi/todo-backend/general
