@@ -8,7 +8,7 @@ Application full stack (React + Node.js + PostgreSQL) conteneurisée avec Docker
 Internet
    │
    ▼
-[Frontend – React/Nginx] ←── frontend-network ──→ [Backend – Node.js/Express]
+[Frontend – React/Nginx] ← frontend-network → [Backend – Node.js/Express]
    (port 80 exposé)                                        │
                                                   backend-network
                                                            │
@@ -20,8 +20,8 @@ Internet
 
 | Service    | Image              | Réseau(x)                         | Port exposé |
 |------------|--------------------|-----------------------------------|-------------|
-| `db`       | postgres:16-alpine | backend-network                   | —           |
-| `backend`  | custom Node.js     | backend-network, frontend-network | —           |
+| `db`       | postgres:16-alpine | backend-network                   | ---           |
+| `backend`  | custom Node.js     | backend-network, frontend-network | ---           |
 | `frontend` | custom Nginx+React | frontend-network                  | 80          |
 
 ### Volumes
